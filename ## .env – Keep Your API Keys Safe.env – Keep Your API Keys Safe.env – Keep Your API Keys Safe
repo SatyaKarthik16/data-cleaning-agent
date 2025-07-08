@@ -1,0 +1,4 @@
+##  .env – Keep Your API Keys Safe
+
+OPENAI_API_KEY=your-openai-api-key-here
+MODEL_NAME=gpt-4

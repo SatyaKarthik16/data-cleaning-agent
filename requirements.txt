@@ -1,0 +1,30 @@
+# Core Libraries
+pandas
+numpy
+tqdm
+ast
+astor
+
+# File Handling
+openpyxl
+python-dotenv
+
+# LangChain Ecosystem
+langchain
+langgraph
+
+# LLM Providers
+openai
+# Uncomment if using Anthropic (Claude)
+# anthropic
+
+# Frontend UI
+streamlit
+
+# Code Execution Safety (Optional)
+nbformat  # For future notebook support
+jupyter_client  # For safe execution context if needed
+
+# Testing & Dev Tools
+pytest
+ipykernel
