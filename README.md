@@ -33,21 +33,30 @@ An intelligent, LLM-powered data cleaning tool built with **LangChain**, **LangG
 
 ---
 
-## 📂 Project Structure
+📂 Final Project Structure
 
 data_cleaning_agent/
-├── app.py # Streamlit app
-├── agent_graph.py # LangGraph nodes and flow
-├── analyzer.py # Data analysis engine
-├── code_generator.py # Generates Python code via GPT
-├── config.py # LLM and env loader
-├── data_loader.py # Validates and loads datasets
-├── executor.py # Executes Python script on df
-├── graph_runner.py # LangGraph runner
-├── history_manager.py # Version logging
-├── llm_suggester.py # Suggests cleaning steps via GPT
-├── main.py # CLI entrypoint
-├── requirements.txt
-├── .env # API keys (excluded from Git)
-├── .gitignore
-└── cleaned_versions/ # Folder for versioned outputs
+│
+├── 📄 app.py                     # Streamlit app (main UI entry point)
+├── 📄 main.py                    # CLI entry point (optional for terminal users)
+├── 📄 graph_runner.py            # LangGraph agent execution
+├── 🧠 agent_graph.py             # LangGraph node definitions and agent state machine
+│
+├── 📁 cleaned_versions/          # Versioned cleaned datasets and scripts
+│   ├── v1_cleaned.csv
+│   ├── v1_script.py
+│   ├── v2_cleaned.csv
+│   └── ...
+│
+├── 📄 analyzer.py                # Generates dataset summaries and statistics
+├── 📄 code_generator.py          # GPT-based cleaning code generation
+├── 📄 config.py                  # Environment and LLM model configuration
+├── 📄 data_loader.py             # Loads and validates user-uploaded datasets
+├── 📄 executor.py                # Executes the cleaning script securely on DataFrame
+├── 📄 history_manager.py         # Versioning and session storage (CSV + script + metadata)
+├── 📄 llm_suggester.py           # Uses GPT to generate cleaning suggestions
+│
+├── 📄 requirements.txt           # Python dependencies
+├── 📄 .env                       # API keys and model config (excluded from Git)
+├── 📄 .gitignore                 # Prevents committing sensitive and generated files
+└── 📄 README.md                  # Project documentation
